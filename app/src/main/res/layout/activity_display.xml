@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.delarosa.delarosa_labexer2.DisplayActivity">
+
+    <Button
+        android:id="@+id/btnLoadSharedPrefs"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:onClick="loadSharedPrefs"
+        android:text="Load Shared Preferences" />
+
+    <Button
+        android:id="@+id/btnLoadIntStorage"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLoadSharedPrefs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:onClick="loadIntStorage"
+        android:text="Load Internal Storage" />
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnLoadIntStorage"
+        android:layout_marginTop="65dp"
+        android:lineSpacingExtra="8sp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="\n"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:onClick="clearDisplay"
+        android:text="Clear"
+        android:layout_below="@+id/btnLoadIntStorage"
+        android:layout_alignLeft="@+id/btnLoadIntStorage"
+        android:layout_alignStart="@+id/btnLoadIntStorage"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goBackToMain"
+        android:text="Back"
+        android:layout_below="@+id/btnIntStorage"
+        android:layout_alignBaseline="@+id/btnClear"
+        android:layout_alignBottom="@+id/btnClear"
+        android:layout_alignRight="@+id/btnLoadIntStorage"
+        android:layout_alignEnd="@+id/btnLoadIntStorage"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp" />
+
+
+</RelativeLayout>
